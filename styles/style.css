@@ -1,0 +1,325 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #EBB400;
+    --primary-degraded: rgba(237, 185, 0, 0.45);
+    --second-color: rgba(80, 72, 68, 1);
+    --color-text: #3A3A3C
+}
+@font-face{
+    font-family: agressive;
+    src: url("../font/AGRESSIVE-LOGOTIPO.otf");
+}
+@font-face {
+    font-family:slogan;
+    src: url("../font/Azonix-SLOGAN.otf");
+}
+@font-face {
+    font-family: rubro;
+    src: url("../font/yugothib-RUBRO.ttf");
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.info_contac{
+    height: 48px;
+    width: 100%;
+    background: var(--second-color);
+    z-index: 999;
+    display: block;
+    /* position: fixed; */
+}
+.contac{
+    display: flex;
+    height: 100%;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+.contac_lista{
+    display: flex;
+    align-items: center;
+}
+.contac_lista > a{
+    color: #fff;
+    text-align: justify;
+    font-family: rubro;
+    font-size: 12px;
+}
+.contac_lista>i{
+    color: #fff;
+    margin-right: 6px;
+}
+
+._header{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    /* position: fixed; */
+    z-index: 1000;
+    background-color: #fff;
+}
+.logo{
+    flex: 1;
+    padding-left: 32px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.container__logo{
+    width: 255px;
+}
+.text_habitus{
+    font-family: agressive;
+    color: var(--primary-color);
+    font-size: 40px;
+    transform: translate(-200%, 0);
+}
+.text_habitus.animation{
+    transition: 1.5s all ease;
+    transform: translate(0,0);
+}
+.container__circle{
+    display: flex;
+    gap: 10px;
+}
+.circle_habitus{
+    border-radius: 50%;
+    background-color: var(--second-color);
+    width: 1rem;
+    height: 1rem;
+}
+.circle_habitus{
+    transform: translate(0, -400%);
+}
+.circle_habitus.one.anima{
+    transition: 1s all ease-in;
+    transform: translate(0,0);
+}
+.circle_habitus.two.anima{
+    transition: 1s all ease-in;
+    transform: translate(0,0);
+}
+.circle_habitus.tree.anima{
+    transition: 1s all ease-in;
+    transform: translate(0,0);
+}
+.text_pie{
+    font-size: 9px;
+    text-align: end;
+    font-family: slogan;
+    color: var(--second-color);
+    opacity: 0;
+}
+.text_pie.anima{
+    transition: 1.5s all ease-in;
+    opacity: 1;
+}
+.nav_menu{
+    flex: 1;
+    height: 100%;
+    margin-right: 16px;
+}
+.nav_lista{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 32px;
+}
+.nav_li{
+    cursor: pointer;
+}
+.nav_li>a{
+    font-family: slogan;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.burger_menu{
+    position: relative;
+}
+.burger_menu{
+    display: none;
+}
+.burger_menu i{
+    position: absolute;
+}
+
+
+@media screen and (max-width: 768px) {
+        ._header{
+            position: relative;
+        }
+        .info_contac{
+            height: 55px;
+        }
+        .contac{
+            gap: 0;
+            flex-wrap: wrap;
+        }
+        .contac_lista{
+            margin-left: 16px;
+        }
+        .burger_menu{
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 16px
+        }
+        .burger_menu > i{
+            font-size: 28px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .icon_two{
+            opacity: 0;
+        }
+        .logo:nth-child(1){
+            order: 1;
+        }
+        .burger_menu:nth-child(3){
+            order: 2;
+        }
+        .nav_menu:nth-child(2){
+            order: 3;
+            position: absolute;
+            /* justify-content: space-evenly; */
+            /* position: fixed; */
+            top: 85px;
+            right: 0;
+            bottom: 0;
+            /* left: 0; */
+            /* width: 100%; */
+            background-color: var(--second-color);
+            height: 100vh;
+            width: 250px;
+            margin: 0;
+            box-shadow: inset 0 0 4px 3px #333;
+            transition: .6s all ease;
+            transform: translate(200%, 0);
+            z-index: 999;
+        }
+        .nav_menu.responsive_active{
+            transition: .6s all ease;
+            transform: translate(0,0);
+        }
+        .nav_lista{
+            flex-direction: column;
+            gap: 0;
+        }
+        .nav_li{
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid #4d4d4d;
+            border-bottom: 1px solid #1a1a1a;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .nav_link{
+            display: block;
+        }
+        .nav_li:hover{
+            background-color: #47403F;
+        }
+}
+
+/* SECTION NUMERO 1 SLIDER */
+
+.section__one{
+    width: 100%;
+}
+.container_slider{
+    height: 470px;
+}
+.slide_section{
+    position: relative;
+    height: 100%;
+}
+.slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slider > img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+/*  SECCION NUMERO 2 INFO DE NOSTROS */
+
+.section__two{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.titulo_two{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.titulo_two > h2{
+    font-family: agressive;
+    width: 70%;
+    height: 100%;
+    font-size: 36px;
+    color: #3A3A3C;
+}
+
+.container_info{
+    display: flex;
+    padding-top: 16px;
+    width: 90%;
+    height: 100%;
+}
+.container_info > figure{
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+figure > .degrade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:var(--primary-degraded)
+}
+figure > img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container_parrafo{
+    flex: 1;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_parrafo > p{
+    width: 80%;
+    font-size: 16px;
+    color: rgba(58, 58, 60, 0.75);;
+    font-family: rubro;
+    text-align: justify;
+}
