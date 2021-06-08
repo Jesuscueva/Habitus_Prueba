@@ -12,7 +12,7 @@
     <title>Habitus</title>
 </head>
 <body>
-    <div class="info_contac">
+    <div class="info_contac" id="home">
         <ul class="contac">
             <li class="contac_lista"><i class="fas fa-phone-square-alt"></i><a href="" class="contac_link">Lorem ipsum dolor sit amet.</a></li>
             <li class="contac_lista"><i class="fas fa-envelope"></i><a href="" class="contac_link">Lorem ipsum dolor sit amet.</a></li>
@@ -42,10 +42,10 @@
         </div>
         <nav class="nav_menu">
             <ul class="nav_lista">
-                <li class="nav_li"><a href="" class="nav_link1">Home</a></li>
-                <li class="nav_li"><a href="" class="nav_link2">Acerca</a></li>
-                <li class="nav_li"><a href="" class="nav_link3">Empresa</a></li>
-                <li class="nav_li"><a href="" class="nav_link4">Ubicanos</a></li>
+                <li class="nav_li"><a href="#inicio" class="nav_link1">Home</a></li>
+                <li class="nav_li"><a href="#acerca" class="nav_link2">Acerca</a></li>
+                <li class="nav_li"><a href="#empresa" class="nav_link3">Empresa</a></li>
+                <li class="nav_li"><a href="#contacto" class="nav_link4">Ubicanos</a></li>
             </ul>
         </nav>
         <div class="burger_menu" id="menu_header">
@@ -54,7 +54,7 @@
         </div>
     </header>
     <main>
-        <section class="section__one">
+        <section class="section__one" id="inicio">
             <div class="container_slider">
                 <div class="slide_section">
                     <div class="slider"><img src="http://lorempixel.com/g/1280/600/" alt=""></div>
@@ -64,7 +64,7 @@
             </div>
         </section>
 
-        <section class="section__two">
+        <section class="section__two" id="acerca">
             <div class="titulo_two">
                 <h2>
                     Acerca de Nosotros
@@ -79,6 +79,95 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi felis sit arcu feugiat massa. Suspendisse venenatis lobortis varius platea. Pretium faucibus vulputate rutrum elit nulla risus condimentum venenatis. Tortor iaculis mauris nisl viverra mauris, proin.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__tree" id="empresa">
+            <div class="title_section__tree">
+                <h2>Quienes nos Conforman</h2>
+            </div>
+            <div class="contenedor_img">
+                <img src="./assets/Slice 1.png" alt="">
+            </div>
+        </section>
+        <section class="section__four">
+            <div class="card__section__four">
+                <div class="card__figure">
+                    <img src="./assets/images1.jpg" alt="">
+                </div>
+                <div class="card__subtitulo">
+                    <h3>Visión</h3>
+                </div>
+                <div class="card__parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, dolor eu sed vitae tempor commodo at in turpis. In sit feugiat quis velit neque. Eu faucibus tristique erat pretium quis laoreet nisi convallis ut. Sit vitae iaculis id vel.
+                    </p>
+                </div>
+            </div>
+            <div class="card__section__four">
+                <div class="card__figure">
+                    <img src="./assets/images1.jpg" alt="">
+                </div>
+                <div class="card__subtitulo">
+                    <h3>Misión</h3>
+                </div>
+                <div class="card__parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, dolor eu sed vitae tempor commodo at in turpis. In sit feugiat quis velit neque. Eu faucibus tristique erat pretium quis laoreet nisi convallis ut. Sit vitae iaculis id vel.
+                    </p>
+                </div>
+            </div>
+            <div class="card__section__four">
+                <div class="card__figure">
+                    <img src="./assets/images1.jpg" alt="">
+                </div>
+                <div class="card__subtitulo">
+                    <h3>Valores</h3>
+                </div>
+                <div class="card__parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, dolor eu sed vitae tempor commodo at in turpis. In sit feugiat quis velit neque. Eu faucibus tristique erat pretium quis laoreet nisi convallis ut. Sit vitae iaculis id vel.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__map" id="contacto">
+            <div class="titulo__map">
+                <h2>
+                    Nos Puedes encontrar Aquí <i class="fas fa-arrow-down">&nbsp;</i><i class="fas fa-arrow-down"></i>
+                </h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1160.2130217559754!2d-77.03397948383243!3d-12.010724205715913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1623163790082!5m2!1ses-419!2spe" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="section__footer">
+            <div class="titulo__footer">
+                <h2>Contactanos</h2>
+            </div>
+            <div class="contenedor_footer">
+                <div class="contenedor__info">
+                    <a href="">970624521 / 01 536332/ 999222333</a>
+                    <a href="">empresa@gmail.com / empresa@outlook.pe</a>
+                    <a href="">Mz. G Lote 20 Mariategui piso 2-2</a>
+                    <a href="">empresa@gmail.com / empresa@outlook.pe</a>
+                </div>
+                <div class="contenedor_redes">
+                    <div class="siguenos">
+                        <h3>
+                            Siguenos:
+                        </h3>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="nav_2">
+                        <ul class="nav__footer">
+                            <li class="footer_lista"><a href="#home" class="footer_link">Inicio</a></li>
+                            <li class="footer_lista"><a href="#acerca" class="footer_link">Acerca</a></li>
+                            <li class="footer_lista"><a href="#empresa" class="footer_link">Empresa</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
