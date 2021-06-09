@@ -1,3 +1,7 @@
+import Carousel from "./js/Carousel/Carousel.js"
+import Scroll from "./js/Scrool/Scrool.js"
+
+
 
 const text = document.querySelector(".text_habitus")
 const circleOne = document.getElementById("circle_one")
@@ -26,5 +30,8 @@ document.addEventListener("DOMContentLoaded", e => {
     navbar.addEventListener("click", e => {
         navMenu.classList.toggle("responsive_active")
     })
+
+    Carousel()
+    Scroll()
 })
 

@@ -9,9 +9,10 @@
 
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Habitus</title>
+    <title>HABITUS</title>
 </head>
 <body>
+    <div id="home1"></div>
     <div class="info_contac" id="home">
         <ul class="contac">
             <li class="contac_lista"><i class="fas fa-phone-square-alt"></i><a href="" class="contac_link">Lorem ipsum dolor sit amet.</a></li>
@@ -23,7 +24,7 @@
     <!-- <button id="click">
         click
     </button> -->
-    <header class="_header">
+    <header class="_header" id="_header">
         <div class="logo">
             <div class="container__logo">
                 <div class="container__circle">
@@ -57,14 +58,22 @@
         <section class="section__one" id="inicio">
             <div class="container_slider">
                 <div class="slide_section">
-                    <div class="slider"><img src="http://lorempixel.com/g/1280/600/" alt=""></div>
-                    <div class="slider"><img src="http://lorempixel.com/1280/600/sports" alt=""></div>
-                    <div class="slider"><img src="http://lorempixel.com/g/1280/600/sports/2" alt=""></div>
+                    <div class="slider opacity"><img src="http://lorempixel.com/g/1280/600/sports/2" alt=""></div>
+                    <div class="slider "><img src="http://lorempixel.com/g/1280/600/" alt=""></div>
+                    <div class="slider "><img src="http://lorempixel.com/1280/600/sports" alt=""></div>
+                </div>
+                <div class="contenedor_btns">
+                    <button class="btn" id="btn_left">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </button>
+                    <button class="btn" id="btn_rigth">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
-
-        <section class="section__two" id="acerca">
+        <div id="acerca"></div>
+        <section class="section__two" id="">
             <div class="titulo_two">
                 <h2>
                     Acerca de Nosotros
@@ -88,7 +97,8 @@
                 <h2>Quienes nos Conforman</h2>
             </div>
             <div class="contenedor_img">
-                <img src="./assets/Slice 1.png" alt="">
+                <img class="img_desktop" src="./assets/Slice_1.png" alt="">
+                <img class="img_movil" src="./assets/Slice2.png" alt="">
             </div>
         </section>
         <section class="section__four">
@@ -107,7 +117,7 @@
             </div>
             <div class="card__section__four">
                 <div class="card__figure">
-                    <img src="./assets/images1.jpg" alt="">
+                    <img  src="./assets/images1.jpg" alt="">
                 </div>
                 <div class="card__subtitulo">
                     <h3>Misión</h3>
@@ -163,7 +173,7 @@
                     </div>
                     <div class="nav_2">
                         <ul class="nav__footer">
-                            <li class="footer_lista"><a href="#home" class="footer_link">Inicio</a></li>
+                            <li class="footer_lista"><a href="#home1" class="footer_link">Inicio</a></li>
                             <li class="footer_lista"><a href="#acerca" class="footer_link">Acerca</a></li>
                             <li class="footer_lista"><a href="#empresa" class="footer_link">Empresa</a></li>
                         </ul>
