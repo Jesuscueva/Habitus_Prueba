@@ -11,15 +11,18 @@
 }
 @font-face{
     font-family: agressive;
-    src: url("../font/AGRESSIVE-LOGOTIPO.otf");
+    font-display: block;
+    src: local("fantasy") ,url("../font/AGRESSIVE-LOGOTIPO.otf");
 }
 @font-face {
     font-family:slogan;
-    src: url("../font/Azonix-SLOGAN.otf");
+    font-display: block;
+    src: local("monospace") ,url("../font/Azonix-SLOGAN.otf");
 }
 @font-face {
     font-family: rubro;
-    src: url("../font/RUBRO.ttf");
+    font-display: block;
+    src: local("sans-serif") url("../font/RUBRO.ttf");
 }
 html{
     /* overflow-x: hidden; */
