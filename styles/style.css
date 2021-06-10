@@ -60,7 +60,7 @@ a{
 .contac_lista > a{
     color: #fff;
     text-align: justify;
-    font-family: rubro;
+    font-family: rubro ,Arial, Helvetica, sans-serif;
     font-size: 12px;
     width: 100%;
 }
@@ -441,7 +441,7 @@ figure > img{
     width: 80%;
     font-size: 16px;
     color: rgba(58, 58, 60, 0.75);;
-    font-family: rubro;
+    font-family: rubro, Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 @media screen and (max-width: 768px) {
@@ -558,7 +558,7 @@ figure > img{
 }
 .card__parrafo{
     padding: 6px 10px;
-    font-family: rubro;
+    font-family: rubro ,Arial, Helvetica, sans-serif;
     color: var(--color-text);
     font-size: 16px;
     text-align: justify;
@@ -651,7 +651,7 @@ figure > img{
     text-align: start;
     font-size: 16px;
     color: #fff;
-    font-family: rubro;
+    font-family: rubro, Arial, Helvetica, sans-serif;
 }
 .contenedor_redes{
     flex: 1;
