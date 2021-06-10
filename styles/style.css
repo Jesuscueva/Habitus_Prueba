@@ -173,10 +173,11 @@ a{
     cursor: pointer;
 }
 .nav_li>a{
-    font-family: slogan;
+    font-family: agressive;
     color: var(--primary-color);
     cursor: pointer;
     width: 100%;
+    font-size: 14px;
 }
 .burger_menu{
     position: relative;
@@ -362,7 +363,7 @@ a{
     top: 70%;
     transform: translate(-100%,0);
     color: #fff;
-    font-family: slogan;
+    font-family: agressive;
 }
 .text_slider.active{
     transition: .9s all ease;
@@ -585,20 +586,21 @@ figure > img{
 }
 
 .section__map{
-    margin-top: 24px;
+    margin-top: 32px;
     width: 100%;
-    text-align: center;padding-bottom: 16px;
+    text-align: center;
+    padding-bottom: 16px;
 }
 .titulo__map{
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
 }
 .titulo__map h2{
     width: 70%;
     font-size: 36px;
-    font-family: slogan;
+    font-family: agressive;
     color: var(--second-color);
     border-bottom: 3px solid var(--second-color);
 }
@@ -626,16 +628,17 @@ figure > img{
     flex-direction: column;
     align-items: center;
     padding: 16px;
+    padding-bottom: 36px;
 }
 .titulo__footer{
     width: 100%;
     color: var(--primary-color);
-    font-size: 24px;
-    font-family: slogan;
+    font-size: 22px;
+    font-family: agressive;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .contenedor_footer{
@@ -660,14 +663,14 @@ figure > img{
     flex: 1;
 }
 .siguenos h3{
-    font-size: 18px;
-    font-family: slogan;
+    font-size: 17px;
+    font-family: agressive;
     color: var(--primary-color);
 }
 .siguenos i{
     margin: 16px 16px 0 0;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
 }
 .nav_2{
@@ -682,8 +685,8 @@ figure > img{
 }
 .footer_link{
     color: var(--primary-color);
-    font-family: slogan;
-    font-size: 16px;
+    font-family: agressive;
+    font-size: 15px;
 }
 @media screen and (max-width: 768px) {
     .contenedor_footer{
