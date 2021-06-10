@@ -363,8 +363,23 @@ a{
 }
 .text_slider.active{
     transition: .9s all ease;
-    transform: translate(20%, 0)
+    transform: translate(18%, 0)
 }
+
+@media screen and (max-width: 530px) {
+    .text_slider{
+        font-size:32px;
+    }
+    .text_slider.active{
+        transform: translate(10%, 0);
+    }
+}
+@media screen and (max-width: 350px) {
+    .text_slider{
+        font-size: 24px;
+    }
+}
+
 
 /*  SECCION NUMERO 2 INFO DE NOSTROS */
 
