@@ -353,6 +353,19 @@ a{
 .btn:hover > i{
     color: var(--second-color);
 }
+.text_slider{
+    position: absolute;
+    font-size: 42px;
+    top: 70%;
+    transform: translate(-100%,0);
+    color: #fff;
+    font-family: slogan;
+}
+.text_slider.active{
+    transition: .9s all ease;
+    transform: translate(20%, 0)
+}
+
 /*  SECCION NUMERO 2 INFO DE NOSTROS */
 
 .section__two{

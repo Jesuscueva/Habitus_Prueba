@@ -11,9 +11,9 @@ console.log(circleOne)
 const textPie = document.querySelector(".text_pie")
 
 
+
 const navbar = document.getElementById("menu_header")
 const navMenu = document.querySelector(".nav_menu")
-
 
 document.addEventListener("DOMContentLoaded", e => {
     text.classList.toggle("animation")
