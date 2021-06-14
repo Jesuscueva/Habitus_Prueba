@@ -21,7 +21,6 @@ const Scroll = ()=>{
             $header.style.position = "fixed"
             $header.style.boxShadow = "0px 2px 3px 2px #eee"
             $main.style.marginTop = "180px"
-            console.log("scroll",$scroll)
         }else{
             $home.style.display = "block"
             $header.style.position = "relative"
@@ -32,7 +31,7 @@ const Scroll = ()=>{
             imgHabitus.classList.add("active")
         }
         if($scroll >= 820){
-            var time = setTimeout(()=>{
+                setTimeout(()=>{
                 imgMobiliario.classList.add("active")
                 imgJc.classList.add("active")
                 imgHabitus.classList.add("active")
@@ -43,7 +42,6 @@ const Scroll = ()=>{
             imgMobiliario.classList.remove("active")
             imgJc.classList.remove("active")
             imgEjecuta.classList.remove("active")
-            clearTimeout(time)
         }
         
     })

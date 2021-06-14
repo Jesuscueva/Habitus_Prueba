@@ -533,6 +533,7 @@ figure > img{
 }
 .img__mobiliario.active{
     opacity: 1;
+    transition: 2;
     visibility: visible;
     transform: scale(0.9, 0.9) translate(-75%, 340%);
 }
